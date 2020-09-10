@@ -1,13 +1,46 @@
-            .margin-bottom-0 {
-                margin-bottom: 0 !important;
-            }
-            
-            .wallpaper {
-                background-image: url(https://images.unsplash.com/photo-1528819027803-5473f2bf7633?ixlib=rb-1.2.1&w=1000&q=80);
-                background-size: cover;
-            }
-            
-            .bg-cus {
-                background-color: #151B54;
-                ;
-            }
+                   * {
+                       box-sizing: border-box;
+                   }
+                   
+                   .margin-bottom-0 {
+                       margin-bottom: 0 !important;
+                   }
+                   
+                   .wallpaper {
+                       background-image: url(https://wallpaperaccess.com/full/152514.jpg);
+                       background-size: cover;
+                   }
+                   
+                   #home {
+                       border-radius: 0%;
+                   }
+                   
+                   .bg-cus {
+                       color: white;
+                       background-color: #151B54 !important;
+                   }
+                   
+                   @keyframes Shuriken {
+                       from {
+                           transform: rotate(0deg);
+                       }
+                       to {
+                           transform: rotate(360deg);
+                       }
+                   }
+                   
+                   #image {
+                       display: block;
+                       margin-left: auto;
+                       margin-right: auto;
+                       margin-top: 30px;
+                   }
+                   
+                   #sec img {
+                       animation: Shuriken 0.01ms infinite;
+                       animation-play-state: paused;
+                   }
+                   
+                   #sec img:hover {
+                       animation-play-state: running;
+                   }
